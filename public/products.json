@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "name": "Скандинавская подвесная лампа",
+    "category": "pendant",
+    "price": 12500,
+    "oldPrice": 15000,
+    "images": [
+      "/uploads/modern-scandinavian-pendant-lamp-white.jpg",
+      "/uploads/scandinavian-pendant-lamp-side-view.jpg",
+      "/uploads/scandinavian-pendant-lamp-detail.jpg",
+      "/uploads/scandinavian-pendant-lamp-in-interior.jpg"
+    ],
+    "inStock": true,
+    "description": "Элегантная подвесная лампа в скандинавском стиле, которая идеально впишется в современный интерьер. Минималистичный дизайн и качественные материалы создают уютную атмосферу в любом помещении.",
+    "features": [
+      "Материал: алюминий и стекло",
+      "Цвет: белый матовый",
+      "Размеры: диаметр 30 см, высота 40 см",
+      "Тип цоколя: E27",
+      "Максимальная мощность: 60 Вт",
+      "Регулируемая высота подвеса",
+      "Совместимость с LED лампами"
+    ],
+    "specifications": {
+      "brand": "Nordic Light",
+      "collection": "Minimalist",
+      "style": "Скандинавский",
+      "room": "Гостиная, Кухня, Столовая",
+      "warranty": "2 года",
+      "country": "Дания"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Минималистичный торшер",
+    "category": "floor",
+    "price": 18900,
+    "oldPrice": 21000,
+    "images": [
+      "/uploads/minimalist-floor-lamp-black-metal.jpg",
+      "/uploads/minimalist-floor-lamp-angle-view.jpg",
+      "/uploads/minimalist-floor-lamp-base-detail.jpg"
+    ],
+    "inStock": true,
+    "description": "Стильный торшер с регулируемым углом наклона плафона. Идеально подходит для чтения и создания направленного освещения. Прочная металлическая конструкция обеспечивает долговечность.",
+    "features": [
+      "Материал: металл с порошковым покрытием",
+      "Цвет: черный матовый",
+      "Высота: 150 см",
+      "Регулируемый угол наклона",
+      "Тип цоколя: E27",
+      "Максимальная мощность: 75 Вт",
+      "Утяжеленное основание для устойчивости"
+    ],
+    "specifications": {
+      "brand": "Modern Living",
+      "collection": "Industrial",
+      "style": "Минимализм, Лофт",
+      "room": "Гостиная, Спальня, Кабинет",
+      "warranty": "3 года",
+      "country": "Германия"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Настольная лампа из дерева",
+    "category": "table",
+    "price": 8500,
+    "oldPrice": 9900,
+    "images": [
+      "/uploads/wooden-table-lamp-warm-light.jpg",
+      "/uploads/wooden-table-lamp-side-view.jpg",
+      "/uploads/wooden-table-lamp-on-desk.jpg"
+    ],
+    "inStock": true,
+    "description": "Уютная настольная лампа из натурального дерева с текстильным абажуром. Создает мягкое рассеянное освещение, идеальное для спальни или рабочего стола.",
+    "features": [
+      "Материал: натуральный дуб и лен",
+      "Цвет: натуральное дерево",
+      "Размеры: высота 45 см, диаметр абажура 25 см",
+      "Тип цоколя: E14",
+      "Максимальная мощность: 40 Вт",
+      "Кнопка включения на шнуре"
+    ],
+    "specifications": {
+      "brand": "Natural Home",
+      "collection": "Eco",
+      "style": "Эко, Рустик",
+      "room": "Спальня, Кабинет, Детская",
+      "warranty": "1 год",
+      "country": "Россия"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Хрустальная люстра",
+    "category": "chandelier",
+    "price": 45000,
+    "oldPrice": 52500,
+    "images": [
+      "/uploads/crystal-chandelier-elegant.jpg",
+      "/uploads/crystal-chandelier-close-up.jpg",
+      "/uploads/crystal-chandelier-in-living-room.jpg"
+    ],
+    "inStock": true,
+    "description": "Роскошная хрустальная люстра, которая станет центральным элементом вашей гостиной. Множество граней создают неповторимую игру света.",
+    "features": [
+      "Материал: хрусталь K9, металл",
+      "Цвет каркаса: хром",
+      "Количество ламп: 8",
+      "Диаметр: 70 см",
+      "Тип цоколя: E14",
+      "Подходит для натяжных потолков"
+    ],
+    "specifications": {
+      "brand": "Crystal Lux",
+      "collection": "Elegance",
+      "style": "Классический, Арт-деко",
+      "room": "Гостиная, Зал, Холл",
+      "warranty": "2 года",
+      "country": "Италия"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Настенный бра в стиле лофт",
+    "category": "wall",
+    "price": 6800,
+    "oldPrice": 0,
+    "images": [
+      "/uploads/industrial-wall-sconce-loft-style.jpg",
+      "/uploads/loft-wall-sconce-side.jpg"
+    ],
+    "inStock": true,
+    "description": "Аутентичный настенный светильник в индустриальном стиле. Идеально сочетается с лампами Эдисона для создания теплой и винтажной атмосферы.",
+    "features": [
+      "Материал: металл, дерево",
+      "Цвет: черный, натуральное дерево",
+      "Тип цоколя: E27",
+      "Лампа в комплект не входит",
+      "Простой монтаж"
+    ],
+    "specifications": {
+      "brand": "Industrial Co.",
+      "collection": "Factory",
+      "style": "Лофт, Индустриальный",
+      "room": "Прихожая, Бар, Кафе, Спальня",
+      "warranty": "1 год",
+      "country": "Китай"
+    }
+  },
+  {
+    "id": 6,
+    "name": "LED панель потолочная",
+    "category": "ceiling",
+    "price": 15200,
+    "oldPrice": 17500,
+    "images": [
+      "/uploads/modern-led-ceiling-panel-light.jpg",
+      "/uploads/led-ceiling-panel-in-office.jpg"
+    ],
+    "inStock": true,
+    "description": "Современная и энергоэффективная светодиодная панель. Обеспечивает яркое и равномерное освещение без мерцания. Идеальна для офисных и коммерческих помещений.",
+    "features": [
+      "Тип: светодиодный (LED)",
+      "Мощность: 48 Вт",
+      "Цветовая температура: 4000K (нейтральный белый)",
+      "Размеры: 595x595 мм",
+      "Материал: алюминий, матовый акрил",
+      "Срок службы: 50 000 часов"
+    ],
+    "specifications": {
+      "brand": "TechLight",
+      "collection": "Office Pro",
+      "style": "Современный, Хай-тек",
+      "room": "Офис, Кухня, Коридор",
+      "warranty": "3 года",
+      "country": "Южная Корея"
+    },
+    "existingImages": "/uploads/led-ceiling-panel-in-office.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Дизайнерская настольная лампа",
+    "category": "table",
+    "price": 22000,
+    "oldPrice": 25000,
+    "images": [
+      "/uploads/designer-table-lamp-modern-art.jpg",
+      "/uploads/designer-table-lamp-on-table.jpg"
+    ],
+    "inStock": true,
+    "description": "Эксклюзивная настольная лампа, которая является не только источником света, но и арт-объектом. Основание из натурального мрамора и латунные элементы подчеркнут ваш изысканный вкус.",
+    "features": [
+      "Материал: мрамор, латунь, стекло",
+      "Цвет: белый мрамор, золото",
+      "Высота: 55 см",
+      "Сенсорное управление яркостью",
+      "Тип цоколя: G9"
+    ],
+    "specifications": {
+      "brand": "Artisan Lamps",
+      "collection": "Prestige",
+      "style": "Современный, Контемпорари",
+      "room": "Кабинет, Гостиная",
+      "warranty": "2 года",
+      "country": "Испания"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Подвесной светильник из ротанга",
+    "category": "pendant",
+    "price": 9800,
+    "oldPrice": 0,
+    "images": [
+      "/uploads/rattan-pendant-light-natural.jpg",
+      "/uploads/rattan-pendant-light-close-up.jpg",
+      "/uploads/rattan-pendant-light-in-bedroom.jpg"
+    ],
+    "inStock": true,
+    "description": "Легкий и воздушный светильник из натурального ротанга ручной работы. Создает красивые тени и добавляет в интерьер нотки стиля бохо и экостиля.",
+    "features": [
+      "Материал: натуральный ротанг",
+      "Ручная работа",
+      "Диаметр: 45 см",
+      "Цвет: натуральный бежевый",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Boho Home",
+      "collection": "Nature",
+      "style": "Бохо, Эко, Скандинавский",
+      "room": "Спальня, Веранда, Кухня",
+      "warranty": "1 год",
+      "country": "Индонезия"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Торшер с регулируемой высотой",
+    "category": "floor",
+    "price": 16500,
+    "oldPrice": 19000,
+    "images": [
+      "/uploads/adjustable-floor-lamp-modern.jpg",
+      "/uploads/adjustable-floor-lamp-mechanism.jpg"
+    ],
+    "inStock": true,
+    "description": "Функциональный и универсальный торшер, высоту и направление света которого можно легко настроить под любые задачи, будь то чтение или общее освещение.",
+    "features": [
+      "Материал: металл",
+      "Цвет: сатин (матовый хром)",
+      "Регулируемая высота: от 120 до 170 см",
+      "Поворотный плафон",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Functional Form",
+      "collection": "Flex",
+      "style": "Современный, Функционализм",
+      "room": "Гостиная, Кабинет, Мастерская",
+      "warranty": "2 года",
+      "country": "Польша"
+    }
+  }
+]
