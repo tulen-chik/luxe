@@ -104,11 +104,11 @@ export default function ContactPage() {
           </button>
 
           <button
-            onClick={() => copyToClipboard("+7 (999) 123-45-67", "Телефон")}
+            onClick={() => copyToClipboard("+375 (99) 123-45-67", "Телефон")}
             className="flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#C17B5C] text-[#C17B5C] hover:bg-[#C17B5C] hover:text-white transition-all duration-300 rounded-lg font-medium font-sans"
           >
             {copied === "Телефон" ? <Check size={18} /> : <Phone size={18} />}
-            <span className="text-sm md:text-base">{copied === "Телефон" ? "Скопировано!" : "+7 (999) 123-45-67"}</span>
+            <span className="text-sm md:text-base">{copied === "Телефон" ? "Скопировано!" : "+375 (99) 123-45-67"}</span>
           </button>
 
           <Link
@@ -169,7 +169,7 @@ export default function ContactPage() {
                 id="phone"
                 name="phone"
                 className="w-full px-4 py-3 border-2 border-[#E8DED0] rounded-lg focus:outline-none focus:border-[#C17B5C] transition-colors text-[#2C1810] bg-[#FAF7F2] font-sans"
-                placeholder="+7 (999) 123-45-67"
+                placeholder="+375 (99) 123-45-67"
               />
             </div>
 

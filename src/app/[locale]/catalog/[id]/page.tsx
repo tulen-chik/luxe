@@ -199,11 +199,11 @@ export default function ProductPage() {
               <h1 className="text-3xl md:text-4xl font-bold text-[#2C2416] font-serif">{product.name}</h1>
               <div className="flex items-baseline gap-3">
                 <span className="text-4xl font-bold text-[#C17B5C] font-serif">
-                  {product.price.toLocaleString("ru-RU")} ₽
+                  {product.price} Br
                 </span>
                 {product.oldPrice && product.oldPrice > product.price && (
                   <span className="text-2xl text-[#6B5D4F] line-through font-serif">
-                    {product.oldPrice.toLocaleString("ru-RU")} ₽
+                    {product.oldPrice} Br
                   </span>
                 )}
               </div>

@@ -1,35 +1,46 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Lightbulb, Lamp, Sun, Moon, Sparkles, Star, ShoppingBag, Heart, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { useTranslations } from "next-intl"
 import StructuredData from "@/components/StructuredData"
+import { motion, Variants } from "framer-motion"
 
 export default function Home() {
-  const t = useTranslations("home")
+  // Тексты преимуществ и шагов теперь заданы напрямую
+  const clientBenefits = [
+    "Уникальный дизайн, созданный с помощью 3D-печати.",
+    "Экологичные материалы и энергоэффективные LED-технологии.",
+    "Гарантия качества и быстрая доставка по всей Беларуси.",
+  ]
+  const proBenefits = [
+    "Специальные условия и скидки для дизайнеров и архитекторов.",
+    "Возможность кастомизации светильников под ваш проект.",
+    "Доступ к 3D-моделям для использования в визуализациях.",
+  ]
+  const steps = [
+    "Выберите светильник",
+    "Оформите заказ",
+    "Выберите способ оплаты",
+    "Получите ваш заказ",
+    "Наслаждайтесь светом",
+  ]
 
-  // Преимущества для клиентов и дизайнеров (предполагается, что они приходят из next-intl)
-  const clientBenefits = t.raw("clientBenefits")
-  const proBenefits = t.raw("proBenefits")
-  const steps = t.raw("steps")
-
-  // Структурированные данные для SEO на русском языке
+  // Структурированные данные для SEO
   const websiteData = {
-    name: "LuxeLights - Каталог премиального освещения",
+    name: "3d fabriq - Каталог премиального 3D-печатного освещения",
     description:
-      "Откройте для себя нашу тщательно подобранную коллекцию современных и уютных светильников. Преобразите свое пространство с помощью элегантных подвесных светильников, торшеров и решений для эмбиентного освещения.",
+      "Откройте для себя нашу коллекцию современных и уютных светильников, созданных с помощью 3D-печати. Преобразите свое пространство с помощью элегантных подвесных светильников, торшеров и уникальных решений для освещения.",
     url: "https://digitalfortress.vercel.app", // Замените на ваш URL
   }
 
   const organizationData = {
-    name: "LuxeLights",
+    name: "3d fabriq",
     url: "https://digitalfortress.vercel.app", // Замените на ваш URL
     logo: "https://digitalfortress.vercel.app/logo.png", // Замените на ваш URL
   }
 
   // Анимации
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -40,7 +51,7 @@ export default function Home() {
     },
   }
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
@@ -52,23 +63,23 @@ export default function Home() {
     },
   }
 
-  const floatingVariants = {
-    animate: (i = 0) => ({
+  const floatingVariants: Variants = {
+    animate: (i: number) => ({
       y: [0, -15, 0],
       transition: {
-        duration: 5 + i * 1.5,
+        duration: 5 + (i || 0) * 1.5,
         repeat: Number.POSITIVE_INFINITY,
         ease: "easeInOut",
       },
     }),
   }
 
-  // Иконки для преимуществ
+  // Иконки
   const clientIcons = [Lightbulb, Star, Heart]
-  const proIcons = [Lamp, Sparkles, Sun, Moon]
-  const stepIcons = [ShoppingBag, Lightbulb, Star, Heart]
+  const proIcons = [Lamp, Sparkles, Sun]
+  const stepIcons = [ShoppingBag, Lightbulb, Star, Heart, Sparkles]
 
-  // Категории светильников
+  // Категории
   const categories = [
     { name: "Подвесные светильники", icon: Lightbulb, count: "120+" },
     { name: "Торшеры", icon: Lamp, count: "85+" },
@@ -81,10 +92,10 @@ export default function Home() {
       <StructuredData type="WebSite" data={websiteData} />
       <StructuredData type="Organization" data={organizationData} />
 
-      <div className="min-h-screen bg-[#FAF7F2] text-[#2C2416]">
+      <div className="min-h-screen pt-4 bg-[#FAF7F2] text-[#2C2416]">
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center justify-center px-4">
-          {/* Декоративные элементы фона */}
+          {/* Декоративные элементы */}
           <div className="absolute inset-0 overflow-hidden">
             <motion.div
               className="absolute top-20 left-10 w-32 h-32 bg-[#C17B5C]/5 rounded-full blur-3xl"
@@ -280,7 +291,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance font-serif">Почему выбирают LuxeLights</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance font-serif">Почему выбирают 3d fabriq</h2>
               <div className="w-24 h-1 bg-[#C17B5C] mx-auto rounded-full mt-6"></div>
             </motion.div>
 
@@ -301,7 +312,7 @@ export default function Home() {
                     <h3 className="text-2xl md:text-3xl font-bold font-serif">Для вашего дома</h3>
                   </div>
                   <ul className="space-y-6">
-                    {clientBenefits.map((b: string, i: number) => {
+                    {clientBenefits.map((b, i) => {
                       const Icon = clientIcons[i] || Lightbulb
                       return (
                         <motion.li key={i} className="flex items-start gap-4 text-base" variants={itemVariants}>
@@ -332,7 +343,7 @@ export default function Home() {
                     <h3 className="text-2xl md:text-3xl font-bold font-serif">Для дизайнеров</h3>
                   </div>
                   <ul className="space-y-6">
-                    {proBenefits.map((b: string, i: number) => {
+                    {proBenefits.map((b, i) => {
                       const Icon = proIcons[i] || Lamp
                       return (
                         <motion.li key={i} className="flex items-start gap-4 text-base" variants={itemVariants}>
@@ -365,7 +376,7 @@ export default function Home() {
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
-              {steps.map((step: string, i: number) => {
+              {steps.map((step, i) => {
                 const Icon = stepIcons[i] || Star
                 return (
                   <motion.div
@@ -411,9 +422,9 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
-                { name: "Скандинавский подвес", desc: "Минималистичный дизайн с теплым светом", price: "12 500", img: "/uploads/rattan-pendant-light-natural.jpg" },
-                { name: "Арочный торшер", desc: "Яркий акцент для гостиной", price: "18 900", img: "/uploads/adjustable-floor-lamp-modern.jpg" },
-                { name: "Керамическая лампа", desc: "Идеальный прикроватный светильник", price: "8 500", img: "/uploads/designer-table-lamp-modern-art.jpg" },
+                { name: "Скандинавский подвес", desc: "Минималистичный дизайн с теплым светом", price: "350", img: "/uploads/rattan-pendant-light-natural.jpg" },
+                { name: "Арочный торшер", desc: "Яркий акцент для гостиной", price: "520", img: "/uploads/adjustable-floor-lamp-modern.jpg" },
+                { name: "Керамическая лампа", desc: "Идеальный прикроватный светильник", price: "240", img: "/uploads/designer-table-lamp-modern-art.jpg" },
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -434,7 +445,7 @@ export default function Home() {
                     <h3 className="text-xl font-bold mb-2 font-serif">{item.name}</h3>
                     <p className="text-[#6B5D4F] text-sm mb-4 font-sans">{item.desc}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-[#C17B5C] font-serif">{item.price} ₽</span>
+                      <span className="text-2xl font-bold text-[#C17B5C] font-serif">{item.price} Br</span>
                     </div>
                   </div>
                 </motion.div>
@@ -481,7 +492,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Присоединяйтесь к тысячам довольных клиентов, которые улучшили свои дома с помощью наших премиальных решений для освещения. Бесплатная доставка на заказы свыше 10 000 ₽.
+              Присоединяйтесь к тысячам довольных клиентов, которые улучшили свои дома с помощью наших премиальных решений для освещения. Бесплатная доставка на заказы свыше 300 Br.
             </motion.p>
 
             <motion.div
@@ -517,10 +528,10 @@ export default function Home() {
                 <div className="p-2 bg-[#C17B5C] rounded-xl">
                   <Lightbulb className="w-6 h-6 text-[#FAF7F2]" />
                 </div>
-                <span className="text-2xl font-bold font-serif">LuxeLights</span>
+                <span className="text-2xl font-bold font-serif">3d fabriq</span>
               </div>
               <p className="text-base text-[#6B5D4F] leading-relaxed max-w-2xl font-sans">
-                Освещаем дома со стилем и изысканностью с 2010 года. Качественное исполнение, вечный дизайн и исключительное обслуживание клиентов.
+                Освещаем дома со стилем и изысканностью. Качественное исполнение, вечный дизайн и исключительное обслуживание клиентов.
               </p>
               <div className="flex gap-6 text-sm text-[#6B5D4F] font-sans">
                 <Link href="#" className="hover:text-[#C17B5C] transition-colors">
@@ -537,7 +548,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="w-16 h-1 bg-[#C17B5C] rounded-full mt-4"></div>
-              <p className="text-xs text-[#6B5D4F] font-sans">© 2025 LuxeLights. Все права защищены.</p>
+              <p className="text-xs text-[#6B5D4F] font-sans">© 2025 3d fabriq. Все права защищены.</p>
             </motion.div>
           </div>
         </footer>

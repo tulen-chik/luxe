@@ -261,7 +261,7 @@ export default function CatalogPage() {
                   </h3>
                   <div className="flex items-end justify-between mt-4">
                     <span className="text-2xl font-bold text-[#C17B5C] font-serif">
-                      {product.price.toLocaleString("ru-RU")} ₽
+                      {product.price} Br
                     </span>
                     <div className="flex items-center gap-1 text-[#C17B5C] font-semibold font-sans group-hover:gap-2 transition-all">
                       <span>Перейти</span>

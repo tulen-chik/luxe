@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Plus, Loader, AlertCircle } from "lucide-react";
 import ProductForm from "@/components/admin/ProductForm";
 import ProductList from "@/components/admin/ProductList";
@@ -127,7 +127,7 @@ export default function AdminPage() {
           )}
         </header>
 
-        <AnimatePresence>
+        <div>
           {showForm && (
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -141,7 +141,7 @@ export default function AdminPage() {
               />
             </motion.div>
           )}
-        </AnimatePresence>
+        </div>
 
         <main className="mt-8">
           {isLoading && (

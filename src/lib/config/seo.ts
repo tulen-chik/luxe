@@ -1,57 +1,62 @@
 import type { SeoConfig } from '../../types/seo';
 
 export const seoConfig: SeoConfig = {
-  // Основная информация о сайте
-  siteName: 'Digital Fortress',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalfortress.vercel.app',
-  description: 'Портфолио, демонстрирующее опыт в выявлении и смягчении цифровых угроз, с коллекцией решенных кейсов по кибербезопасности и форумом для обсуждений.',
+  // --- Основная информация о сайте ---
+  siteName: '3d fabriq',
+  // ВАЖНО: Замените URL на ваш реальный домен, когда он будет готов
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://your-3dfabriq-url.com',
+  description: 'Откройте для себя уникальные дизайнерские светильники от 3d fabriq, созданные с помощью 3D-печати. Каталог подвесных светильников, торшеров и ламп из экологичных материалов с доставкой по Беларуси.',
   
-  // Ключевые слова для поисковых систем
+  // --- Ключевые слова для поисковых систем ---
   keywords: [
-    'кибербезопасность',
-    'цифровые угрозы',
-    'смягчение угроз',
-    'информационная безопасность',
-    'портфолио по кибербезопасности',
-    'этичный хакинг',
-    'тестирование на проникновение',
-    'анализ уязвимостей',
-    'анализ вредоносных программ',
-    'реагирование на инциденты',
-    'форум по кибербезопасности',
-    'фишинг',
-    'мошенничество',
-    'защита данных'
+    '3D-печать светильников',
+    'дизайнерское освещение',
+    'купить светильник Минск',
+    'экологичные лампы',
+    'торшеры',
+    'люстры',
+    'бра',
+    'освещение для дома',
+    'интерьерный свет',
+    'кастомные светильники',
+    '3d fabriq',
+    'современное освещение',
+    'светильники Беларусь',
+    '3д печать',
+    'освещение на заказ',
   ],
 
-  // Информация об авторе и издателе
-  author: 'Digital Fortress Team',
-  creator: 'Digital Fortress',
-  publisher: 'Digital Fortress',
+  // --- Информация об авторе и издателе ---
+  author: '3d fabriq',
+  creator: '3d fabriq',
+  publisher: '3d fabriq',
 
-  // Open Graph метаданные (для Facebook, LinkedIn и т.д.)
+  // --- Open Graph метаданные (для Facebook, VK, Telegram и т.д.) ---
   openGraph: {
     type: 'website',
-    locale: 'ru_RU', // Указываем русскую локаль
-    siteName: 'Digital Fortress',
+    locale: 'ru_RU', // Русская локаль
+    siteName: '3d fabriq',
     images: [
       {
-        url: '/og-image.png', // Рекомендуется создать специальное изображение для соцсетей
+        // ВАЖНО: Создайте и разместите изображение в папке /public
+        url: '/logo.png', 
         width: 1200,
         height: 630,
-        alt: 'Digital Fortress - Форум и портфолио по кибербезопасности',
+        alt: '3d fabriq - Дизайнерские светильники, созданные с помощью 3D-печати',
       },
     ],
   },
 
-  // Twitter метаданные
+  // --- Twitter метаданные ---
   twitter: {
     card: 'summary_large_image',
-    creator: '@DigitalFortress', // Замените на ваш реальный Twitter handle, если он есть
-    images: ['/twitter-image.png'], // Можно использовать то же изображение, что и для Open Graph
+    // ВАЖНО: Замените на ваш реальный аккаунт в Twitter/X, если он есть
+    creator: '@3dfabriq_by', 
+    // Можно использовать то же изображение, что и для Open Graph
+    images: ['/logo.png'], 
   },
 
-  // Инструкции для поисковых роботов
+  // --- Инструкции для поисковых роботов (оставляем как есть, это оптимально) ---
   robots: {
     index: true,
     follow: true,
@@ -64,7 +69,8 @@ export const seoConfig: SeoConfig = {
     },
   },
 
-  // Коды верификации для поисковых систем
+  // --- Коды верификации для поисковых систем ---
+  // ВАЖНО: Получите эти коды в Google Search Console и Яндекс.Вебмастер и добавьте их в переменные окружения (.env.local)
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'your-google-verification-code',
     yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || 'your-yandex-verification-code',
