@@ -1,268 +1,1005 @@
 [
   {
-    "id": 1,
-    "name": "Скандинавская подвесная лампа",
-    "category": "pendant",
-    "price": 12500,
-    "oldPrice": 15000,
-    "images": [
-      "/uploads/modern-scandinavian-pendant-lamp-white.jpg",
-      "/uploads/scandinavian-pendant-lamp-side-view.jpg",
-      "/uploads/scandinavian-pendant-lamp-detail.jpg",
-      "/uploads/scandinavian-pendant-lamp-in-interior.jpg"
-    ],
-    "inStock": true,
-    "description": "Элегантная подвесная лампа в скандинавском стиле, которая идеально впишется в современный интерьер. Минималистичный дизайн и качественные материалы создают уютную атмосферу в любом помещении.",
-    "features": [
-      "Материал: алюминий и стекло",
-      "Цвет: белый матовый",
-      "Размеры: диаметр 30 см, высота 40 см",
-      "Тип цоколя: E27",
-      "Максимальная мощность: 60 Вт",
-      "Регулируемая высота подвеса",
-      "Совместимость с LED лампами"
-    ],
-    "specifications": {
-      "brand": "Nordic Light",
-      "collection": "Minimalist",
-      "style": "Скандинавский",
-      "room": "Гостиная, Кухня, Столовая",
-      "warranty": "2 года",
-      "country": "Дания"
-    }
-  },
-  {
     "id": 2,
-    "name": "Минималистичный торшер",
-    "category": "floor",
-    "price": 18900,
-    "oldPrice": 21000,
+    "name": "Ваза 'Снежная гармония'",
+    "category": "decor",
+    "price": 80,
+    "oldPrice": 95,
     "images": [
-      "/uploads/minimalist-floor-lamp-black-metal.jpg",
-      "/uploads/minimalist-floor-lamp-angle-view.jpg",
-      "/uploads/minimalist-floor-lamp-base-detail.jpg"
+      "/uploads/Ваза 1_IMG_1363.JPG",
+      "/uploads/Ваза 1_IMG_1364.JPG",
+      "/uploads/Ваза 1_IMG_1365.JPG",
+      "/uploads/Ваза 1_IMG_1366.JPG",
+      "/uploads/Ваза 1_IMG_1367.JPG",
+      "/uploads/Ваза 1_IMG_1368.JPG"
     ],
     "inStock": true,
-    "description": "Стильный торшер с регулируемым углом наклона плафона. Идеально подходит для чтения и создания направленного освещения. Прочная металлическая конструкция обеспечивает долговечность.",
+    "description": "Элегантная керамическая ваза для цветов или в качестве самостоятельного элемента декора. Ее уникальная форма и текстура добавят изысканности вашему интерьеру.",
     "features": [
-      "Материал: металл с порошковым покрытием",
-      "Цвет: черный матовый",
-      "Высота: 150 см",
-      "Регулируемый угол наклона",
-      "Тип цоколя: E27",
-      "Максимальная мощность: 75 Вт",
-      "Утяжеленное основание для устойчивости"
+      "Материал: Керамика",
+      "Цвет: Белый",
+      "Высота: 30 см",
+      "Ручная работа"
     ],
     "specifications": {
-      "brand": "Modern Living",
-      "collection": "Industrial",
-      "style": "Минимализм, Лофт",
-      "room": "Гостиная, Спальня, Кабинет",
-      "warranty": "3 года",
-      "country": "Германия"
+      "brand": "Ceramic Art",
+      "collection": "Nature",
+      "style": "Скандинавский, Минимализм",
+      "room": "Гостиная, Спальня, Кухня",
+      "warranty": "1 год"
     }
   },
   {
     "id": 3,
-    "name": "Настольная лампа из дерева",
-    "category": "table",
-    "price": 8500,
-    "oldPrice": 9900,
+    "name": "Ваза 'Дымчатый силуэт'",
+    "category": "decor",
+    "price": 90,
+    "oldPrice": 115,
     "images": [
-      "/uploads/wooden-table-lamp-warm-light.jpg",
-      "/uploads/wooden-table-lamp-side-view.jpg",
-      "/uploads/wooden-table-lamp-on-desk.jpg"
+      "/uploads/Ваза 2_IMG_1355.JPG",
+      "/uploads/Ваза 2_IMG_1356.JPG",
+      "/uploads/Ваза 2_IMG_1357.JPG",
+      "/uploads/Ваза 2_IMG_1358.JPG",
+      "/uploads/Ваза 2_IMG_1359.JPG",
+      "/uploads/Ваза 2_IMG_1360.JPG",
+      "/uploads/Ваза 2_IMG_1361.JPG",
+      "/uploads/Ваза 2_IMG_1362.JPG"
     ],
     "inStock": true,
-    "description": "Уютная настольная лампа из натурального дерева с текстильным абажуром. Создает мягкое рассеянное освещение, идеальное для спальни или рабочего стола.",
+    "description": "Стильная стеклянная ваза с оригинальным дизайном. Прекрасно подходит для создания современных флористических композиций.",
     "features": [
-      "Материал: натуральный дуб и лен",
-      "Цвет: натуральное дерево",
-      "Размеры: высота 45 см, диаметр абажура 25 см",
-      "Тип цоколя: E14",
-      "Максимальная мощность: 40 Вт",
-      "Кнопка включения на шнуре"
+      "Материал: Стекло",
+      "Цвет: Дымчатый",
+      "Высота: 28 см"
     ],
     "specifications": {
-      "brand": "Natural Home",
-      "collection": "Eco",
-      "style": "Эко, Рустик",
-      "room": "Спальня, Кабинет, Детская",
-      "warranty": "1 год",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Хрустальная люстра",
-    "category": "chandelier",
-    "price": 45000,
-    "oldPrice": 52500,
-    "images": [
-      "/uploads/crystal-chandelier-elegant.jpg",
-      "/uploads/crystal-chandelier-close-up.jpg",
-      "/uploads/crystal-chandelier-in-living-room.jpg"
-    ],
-    "inStock": true,
-    "description": "Роскошная хрустальная люстра, которая станет центральным элементом вашей гостиной. Множество граней создают неповторимую игру света.",
-    "features": [
-      "Материал: хрусталь K9, металл",
-      "Цвет каркаса: хром",
-      "Количество ламп: 8",
-      "Диаметр: 70 см",
-      "Тип цоколя: E14",
-      "Подходит для натяжных потолков"
-    ],
-    "specifications": {
-      "brand": "Crystal Lux",
-      "collection": "Elegance",
-      "style": "Классический, Арт-деко",
-      "room": "Гостиная, Зал, Холл",
-      "warranty": "2 года",
-      "country": "Италия"
+      "brand": "Glass Works",
+      "collection": "Modern",
+      "style": "Современный",
+      "room": "Гостиная, Столовая",
+      "warranty": "1 год"
     }
   },
   {
     "id": 5,
-    "name": "Настенный бра в стиле лофт",
-    "category": "wall",
-    "price": 6800,
-    "oldPrice": 0,
+    "name": "Лампа 'Кремовый уют'",
+    "category": "table",
+    "price": 110,
+    "oldPrice": 130,
     "images": [
-      "/uploads/industrial-wall-sconce-loft-style.jpg",
-      "/uploads/loft-wall-sconce-side.jpg"
+      "/uploads/Лампа 10_IMG_1113.JPG",
+      "/uploads/Лампа 10_IMG_1114.JPG",
+      "/uploads/Лампа 10_IMG_1115.JPG",
+      "/uploads/Лампа 10_IMG_1116.JPG",
+      "/uploads/Лампа 10_IMG_1117.JPG",
+      "/uploads/Лампа 10_IMG_1118.JPG"
     ],
     "inStock": true,
-    "description": "Аутентичный настенный светильник в индустриальном стиле. Идеально сочетается с лампами Эдисона для создания теплой и винтажной атмосферы.",
+    "description": "Классическая настольная лампа с тканевым абажуром. Создает мягкий и уютный свет, идеальный для чтения перед сном.",
     "features": [
-      "Материал: металл, дерево",
-      "Цвет: черный, натуральное дерево",
+      "Материал: Металл, ткань",
+      "Цвет: Кремовый",
       "Тип цоколя: E27",
-      "Лампа в комплект не входит",
-      "Простой монтаж"
+      "Высота: 50 см"
     ],
     "specifications": {
-      "brand": "Industrial Co.",
-      "collection": "Factory",
-      "style": "Лофт, Индустриальный",
-      "room": "Прихожая, Бар, Кафе, Спальня",
-      "warranty": "1 год",
-      "country": "Китай"
+      "brand": "Classic Light",
+      "collection": "Comfort",
+      "style": "Классический",
+      "room": "Спальня, Гостиная",
+      "warranty": "2 года"
     }
   },
   {
     "id": 6,
-    "name": "LED панель потолочная",
-    "category": "ceiling",
-    "price": 15200,
-    "oldPrice": 17500,
+    "name": "Лампа 'Черный лофт'",
+    "category": "pendant",
+    "price": 210,
     "images": [
-      "/uploads/modern-led-ceiling-panel-light.jpg",
-      "/uploads/led-ceiling-panel-in-office.jpg"
+      "/uploads/Лампа 11_IMG_1108.JPG",
+      "/uploads/Лампа 11_IMG_1109.JPG",
+      "/uploads/Лампа 11_IMG_1110.JPG",
+      "/uploads/Лампа 11_IMG_1111.JPG",
+      "/uploads/Лампа 11_IMG_1112.JPG"
     ],
     "inStock": true,
-    "description": "Современная и энергоэффективная светодиодная панель. Обеспечивает яркое и равномерное освещение без мерцания. Идеальна для офисных и коммерческих помещений.",
+    "description": "Подвесной светильник в индустриальном стиле. Металлический плафон обеспечивает направленный свет, идеально подходящий для освещения обеденной зоны или барной стойки.",
     "features": [
-      "Тип: светодиодный (LED)",
-      "Мощность: 48 Вт",
-      "Цветовая температура: 4000K (нейтральный белый)",
-      "Размеры: 595x595 мм",
-      "Материал: алюминий, матовый акрил",
-      "Срок службы: 50 000 часов"
+      "Материал: Металл",
+      "Цвет: Черный матовый",
+      "Диаметр: 35 см",
+      "Тип цоколя: E27"
     ],
     "specifications": {
-      "brand": "TechLight",
-      "collection": "Office Pro",
-      "style": "Современный, Хай-тек",
-      "room": "Офис, Кухня, Коридор",
-      "warranty": "3 года",
-      "country": "Южная Корея"
-    },
-    "existingImages": "/uploads/led-ceiling-panel-in-office.jpg"
+      "brand": "Loft Design",
+      "collection": "Factory",
+      "style": "Лофт, Индустриальный",
+      "room": "Кухня, Столовая, Бар",
+      "warranty": "1 год"
+    }
   },
   {
-    "id": 7,
-    "name": "Дизайнерская настольная лампа",
+    "id": 10,
+    "name": "Лампа 'Мрамор и золото'",
     "category": "table",
-    "price": 22000,
-    "oldPrice": 25000,
+    "price": 180,
+    "oldPrice": 200,
     "images": [
-      "/uploads/designer-table-lamp-modern-art.jpg",
-      "/uploads/designer-table-lamp-on-table.jpg"
+      "/uploads/Лампа 12_IMG_1020.JPG",
+      "/uploads/Лампа 12_IMG_1021.JPG",
+      "/uploads/Лампа 12_IMG_1022.JPG",
+      "/uploads/Лампа 12_IMG_1023.JPG",
+      "/uploads/Лампа 12_IMG_1024.JPG",
+      "/uploads/Лампа 12_IMG_1025.JPG",
+      "/uploads/Лампа 12_IMG_1032.JPG",
+      "/uploads/Лампа 12_IMG_1033.JPG",
+      "/uploads/Лампа 12_IMG_1034.JPG",
+      "/uploads/Лампа 12_IMG_1035.JPG"
     ],
     "inStock": true,
-    "description": "Эксклюзивная настольная лампа, которая является не только источником света, но и арт-объектом. Основание из натурального мрамора и латунные элементы подчеркнут ваш изысканный вкус.",
+    "description": "Дизайнерская настольная лампа с мраморным основанием и металлическим плафоном. Станет изысканным дополнением к современному интерьеру.",
     "features": [
-      "Материал: мрамор, латунь, стекло",
-      "Цвет: белый мрамор, золото",
-      "Высота: 55 см",
-      "Сенсорное управление яркостью",
-      "Тип цоколя: G9"
+      "Материал: Мрамор, металл",
+      "Цвет: Белый мрамор, золото",
+      "Тип цоколя: E14",
+      "Высота: 55 см"
     ],
     "specifications": {
       "brand": "Artisan Lamps",
       "collection": "Prestige",
       "style": "Современный, Контемпорари",
       "room": "Кабинет, Гостиная",
-      "warranty": "2 года",
-      "country": "Испания"
+      "warranty": "2 года"
     }
   },
   {
-    "id": 8,
-    "name": "Подвесной светильник из ротанга",
-    "category": "pendant",
-    "price": 9800,
-    "oldPrice": 0,
+    "id": 11,
+    "name": "Лампа 'Скандинавский минимализм'",
+    "category": "table",
+    "price": 75,
+    "oldPrice": 90,
     "images": [
-      "/uploads/rattan-pendant-light-natural.jpg",
-      "/uploads/rattan-pendant-light-close-up.jpg",
-      "/uploads/rattan-pendant-light-in-bedroom.jpg"
+      "/uploads/Лампа 13_IMG_1026.JPG",
+      "/uploads/Лампа 13_IMG_1027.JPG",
+      "/uploads/Лампа 13_IMG_1028.JPG",
+      "/uploads/Лампа 13_IMG_1029.JPG",
+      "/uploads/Лампа 13_IMG_1030.JPG",
+      "/uploads/Лампа 13_IMG_1031.JPG"
     ],
     "inStock": true,
-    "description": "Легкий и воздушный светильник из натурального ротанга ручной работы. Создает красивые тени и добавляет в интерьер нотки стиля бохо и экостиля.",
+    "description": "Минималистичная настольная лампа с деревянным основанием и простым дизайном. Идеально подходит для рабочего стола или прикроватной тумбочки.",
     "features": [
-      "Материал: натуральный ротанг",
-      "Ручная работа",
-      "Диаметр: 45 см",
-      "Цвет: натуральный бежевый",
+      "Материал: Дерево, металл",
+      "Цвет: Натуральное дерево, белый",
+      "Тип цоколя: E27",
+      "Высота: 40 см"
+    ],
+    "specifications": {
+      "brand": "Nordic Light",
+      "collection": "Minimalist",
+      "style": "Скандинавский",
+      "room": "Спальня, Кабинет, Детская",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Лампа 'Галактика'",
+    "category": "pendant",
+    "price": 280,
+    "oldPrice": 320,
+    "images": [
+      "/uploads/Лампа 14_IMG_1009.JPG",
+      "/uploads/Лампа 14_IMG_1010.JPG",
+      "/uploads/Лампа 14_IMG_1011.JPG",
+      "/uploads/Лампа 14_IMG_1012.JPG",
+      "/uploads/Лампа 14_IMG_1013.JPG",
+      "/uploads/Лампа 14_IMG_1014.JPG",
+      "/uploads/Лампа 14_IMG_1015.JPG",
+      "/uploads/Лампа 14_IMG_1016.JPG",
+      "/uploads/Лампа 14_IMG_1017.JPG",
+      "/uploads/Лампа 14_IMG_1439.png",
+      "/uploads/Лампа 14_IMG_1440.png"
+    ],
+    "inStock": true,
+    "description": "Оригинальный подвесной светильник с несколькими плафонами разной формы. Создает интересную игру света и станет центральным элементом в интерьере.",
+    "features": [
+      "Материал: Стекло, металл",
+      "Цвет: Дымчатое стекло, черный",
+      "Количество плафонов: 3",
+      "Тип цоколя: E14"
+    ],
+    "specifications": {
+      "brand": "Modern Living",
+      "collection": "Galaxy",
+      "style": "Современный, Лофт",
+      "room": "Гостиная, Столовая",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Лампа 'Бронзовый винтаж'",
+    "category": "wall",
+    "price": 65,
+    "images": [
+      "/uploads/Лампа 15_IMG_1119.JPG"
+    ],
+    "inStock": true,
+    "description": "Компактное настенное бра в индустриальном стиле. Идеально подходит для подсветки отдельных зон или использования в качестве ночника.",
+    "features": [
+      "Материал: Металл",
+      "Цвет: Бронза",
+      "Тип цоколя: E27",
+      "Лампа в комплект не входит"
+    ],
+    "specifications": {
+      "brand": "Industrial Co.",
+      "collection": "Factory",
+      "style": "Лофт, Винтаж",
+      "room": "Прихожая, Спальня, Коридор",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Торшер 'Элегантный хром'",
+    "category": "floor",
+    "price": 220,
+    "oldPrice": 250,
+    "images": [
+      "/uploads/Лампа 17_IMG_1492.JPG",
+      "/uploads/Лампа 17_IMG_1493.JPG",
+      "/uploads/Лампа 17_IMG_1494.JPG",
+      "/uploads/Лампа 17_IMG_1495.JPG",
+      "/uploads/Лампа 17_IMG_1496.JPG",
+      "/uploads/Лампа 17_IMG_1497.JPG",
+      "/uploads/Лампа 17_IMG_1498.JPG",
+      "/uploads/Лампа 17_IMG_1499.JPG",
+      "/uploads/Лампа 17_IMG_1500.JPG",
+      "/uploads/Лампа 17_IMG_1501.JPG",
+      "/uploads/Лампа 17_IMG_1502.JPG",
+      "/uploads/Лампа 17_IMG_1503.JPG",
+      "/uploads/Лампа 17_IMG_1504.JPG",
+      "/uploads/Лампа 17_IMG_1505.JPG",
+      "/uploads/Лампа 17_IMG_1506.JPG",
+      "/uploads/Лампа 17_IMG_1507.JPG"
+    ],
+    "inStock": true,
+    "description": "Элегантный торшер с тонкой ножкой и большим тканевым абажуром. Обеспечивает мягкое, рассеянное освещение для создания уютной атмосферы.",
+    "features": [
+      "Материал: Металл, ткань",
+      "Цвет: Хром, серый",
+      "Высота: 160 см",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Functional Form",
+      "collection": "Elegance",
+      "style": "Современный",
+      "room": "Гостиная, Спальня",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Лампа 'Джутовое бохо'",
+    "category": "pendant",
+    "price": 195,
+    "oldPrice": 220,
+    "images": [
+      "/uploads/Лампа 18_IMG_1484.JPG",
+      "/uploads/Лампа 18_IMG_1485.JPG",
+      "/uploads/Лампа 18_IMG_1486.JPG",
+      "/uploads/Лампа 18_IMG_1487.JPG",
+      "/uploads/Лампа 18_IMG_1488.JPG",
+      "/uploads/Лампа 18_IMG_1489.JPG",
+      "/uploads/Лампа 18_IMG_1490.JPG",
+      "/uploads/Лампа 18_IMG_1491.JPG"
+    ],
+    "inStock": true,
+    "description": "Подвесной светильник в стиле бохо из натуральных материалов. Плетеный абажур создает красивые узоры света и тени.",
+    "features": [
+      "Материал: Джут, металл",
+      "Цвет: Натуральный",
+      "Диаметр: 50 см",
       "Тип цоколя: E27"
     ],
     "specifications": {
       "brand": "Boho Home",
       "collection": "Nature",
-      "style": "Бохо, Эко, Скандинавский",
+      "style": "Бохо, Эко",
       "room": "Спальня, Веранда, Кухня",
-      "warranty": "1 год",
-      "country": "Индонезия"
+      "warranty": "1 год"
     }
   },
   {
-    "id": 9,
-    "name": "Торшер с регулируемой высотой",
-    "category": "floor",
-    "price": 16500,
-    "oldPrice": 19000,
+    "id": 16,
+    "name": "Лампа 'Футуристический хром'",
+    "category": "table",
+    "price": 135,
+    "oldPrice": 150,
     "images": [
-      "/uploads/adjustable-floor-lamp-modern.jpg",
-      "/uploads/adjustable-floor-lamp-mechanism.jpg"
+      "/uploads/Лампа 1_IMG_1417.JPG",
+      "/uploads/Лампа 1_IMG_1418.JPG",
+      "/uploads/Лампа 1_IMG_1419.JPG",
+      "/uploads/Лампа 1_IMG_1420.JPG",
+      "/uploads/Лампа 1_IMG_1421.JPG",
+      "/uploads/Лампа 1_IMG_1422.JPG",
+      "/uploads/Лампа 1_IMG_1423.JPG",
+      "/uploads/Лампа 1_IMG_1424.JPG"
     ],
     "inStock": true,
-    "description": "Функциональный и универсальный торшер, высоту и направление света которого можно легко настроить под любые задачи, будь то чтение или общее освещение.",
+    "description": "Настольная лампа в футуристическом стиле с хромированными элементами. Яркий акцент для современного рабочего пространства.",
     "features": [
-      "Материал: металл",
-      "Цвет: сатин (матовый хром)",
-      "Регулируемая высота: от 120 до 170 см",
-      "Поворотный плафон",
+      "Материал: Металл, пластик",
+      "Цвет: Хром",
+      "Встроенный LED модуль",
+      "Сенсорное управление"
+    ],
+    "specifications": {
+      "brand": "TechLight",
+      "collection": "Future",
+      "style": "Хай-тек",
+      "room": "Кабинет, Офис",
+      "warranty": "3 года"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Лампа 'Стеклянный винтаж'",
+    "category": "pendant",
+    "price": 160,
+    "images": [
+      "/uploads/Лампа 2_IMG_1406.JPG",
+      "/uploads/Лампа 2_IMG_1407.JPG",
+      "/uploads/Лампа 2_IMG_1408.JPG",
+      "/uploads/Лампа 2_IMG_1409.JPG",
+      "/uploads/Лампа 2_IMG_1410.JPG",
+      "/uploads/Лампа 2_IMG_1411.JPG",
+      "/uploads/Лампа 2_IMG_1412.JPG",
+      "/uploads/Лампа 2_IMG_1413.JPG",
+      "/uploads/Лампа 2_IMG_1414.JPG",
+      "/uploads/Лампа 2_IMG_1415.JPG",
+      "/uploads/Лампа 2_IMG_1416.JPG"
+    ],
+    "inStock": true,
+    "description": "Подвесной светильник с большим стеклянным плафоном. Прозрачное стекло позволяет использовать декоративные лампы Эдисона для создания винтажной атмосферы.",
+    "features": [
+      "Материал: Стекло, металл",
+      "Цвет: Прозрачный, черный",
+      "Диаметр плафона: 30 см",
       "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Glass Works",
+      "collection": "Vintage",
+      "style": "Лофт, Винтаж",
+      "room": "Кухня, Столовая, Кафе",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Лампа 'Бирюзовая керамика'",
+    "category": "table",
+    "price": 95,
+    "oldPrice": 110,
+    "images": [
+      "/uploads/Лампа 3_IMG_1392.JPG",
+      "/uploads/Лампа 3_IMG_1393.JPG",
+      "/uploads/Лампа 3_IMG_1394.JPG",
+      "/uploads/Лампа 3_IMG_1395.JPG",
+      "/uploads/Лампа 3_IMG_1402.JPG",
+      "/uploads/Лампа 3_IMG_1403.JPG",
+      "/uploads/Лампа 3_IMG_1404.JPG",
+      "/uploads/Лампа 3_IMG_1405.JPG"
+    ],
+    "inStock": true,
+    "description": "Настольная лампа с керамическим основанием и рельефным узором. Добавит уюта и текстуры в интерьер спальни или гостиной.",
+    "features": [
+      "Материал: Керамика, ткань",
+      "Цвет: Бирюзовый, белый",
+      "Высота: 45 см",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Ceramic Art",
+      "collection": "Azure",
+      "style": "Средиземноморский, Бохо",
+      "room": "Спальня, Гостиная",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Бра 'Сатиновый поворот'",
+    "category": "wall",
+    "price": 85,
+    "oldPrice": 100,
+    "images": [
+      "/uploads/Лампа 4_IMG_1396.JPG",
+      "/uploads/Лампа 4_IMG_1397.JPG",
+      "/uploads/Лампа 4_IMG_1398.JPG",
+      "/uploads/Лампа 4_IMG_1399.JPG",
+      "/uploads/Лампа 4_IMG_1400.JPG",
+      "/uploads/Лампа 4_IMG_1401.JPG"
+    ],
+    "inStock": true,
+    "description": "Настенное бра с поворотным механизмом. Позволяет направить свет в нужную сторону, что делает его идеальным для чтения в кровати или кресле.",
+    "features": [
+      "Материал: Металл",
+      "Цвет: Сатин (матовый хром)",
+      "Поворотный плафон",
+      "Тип цоколя: E14"
     ],
     "specifications": {
       "brand": "Functional Form",
       "collection": "Flex",
       "style": "Современный, Функционализм",
-      "room": "Гостиная, Кабинет, Мастерская",
-      "warranty": "2 года",
-      "country": "Польша"
+      "room": "Спальня, Кабинет",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Лампа-скульптура 'Арт-объект'",
+    "category": "table",
+    "price": 155,
+    "images": [
+      "/uploads/Лампа 5_IMG_1388.JPG",
+      "/uploads/Лампа 5_IMG_1389.JPG",
+      "/uploads/Лампа 5_IMG_1390.JPG",
+      "/uploads/Лампа 5_IMG_1391.JPG",
+      "/uploads/Лампа 5_IMG_1480.JPG",
+      "/uploads/Лампа 5_IMG_1481.JPG",
+      "/uploads/Лампа 5_IMG_1482.JPG",
+      "/uploads/Лампа 5_IMG_1483.JPG"
+    ],
+    "inStock": true,
+    "description": "Оригинальная настольная лампа в виде фигуры. Не только источник света, но и самостоятельный арт-объект, привлекающий внимание.",
+    "features": [
+      "Материал: Полистоун, ткань",
+      "Цвет: Белый, черный",
+      "Высота: 60 см",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Art Decor",
+      "collection": "Sculpture",
+      "style": "Контемпорари, Арт-деко",
+      "room": "Гостиная, Кабинет, Холл",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Лампа 'Скандинавское дерево'",
+    "category": "pendant",
+    "price": 140,
+    "oldPrice": 160,
+    "images": [
+      "/uploads/Лампа 6_IMG_1384.JPG",
+      "/uploads/Лампа 6_IMG_1385.JPG",
+      "/uploads/Лампа 6_IMG_1386.JPG",
+      "/uploads/Лампа 6_IMG_1387.JPG"
+    ],
+    "inStock": true,
+    "description": "Подвесной светильник в скандинавском стиле с деревянными элементами. Простой и лаконичный дизайн, который добавит тепла и уюта.",
+    "features": [
+      "Материал: Металл, дерево",
+      "Цвет: Белый, натуральное дерево",
+      "Диаметр: 40 см",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Nordic Light",
+      "collection": "Hygge",
+      "style": "Скандинавский",
+      "room": "Кухня, Столовая, Детская",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Торшер-тренога 'Студийный свет'",
+    "category": "floor",
+    "price": 240,
+    "images": [
+      "/uploads/Лампа 7_IMG_1144.JPG",
+      "/uploads/Лампа 7_IMG_1145.JPG",
+      "/uploads/Лампа 7_IMG_1146.JPG",
+      "/uploads/Лампа 7_IMG_1147.JPG",
+      "/uploads/Лампа 7_IMG_1148.JPG",
+      "/uploads/Лампа 7_IMG_1149.JPG",
+      "/uploads/Лампа 7_IMG_1150.JPG",
+      "/uploads/Лампа 7_IMG_1151.JPG"
+    ],
+    "inStock": true,
+    "description": "Торшер-тренога в стиле лофт. Устойчивая конструкция и большой металлический плафон делают его заметным элементом интерьера.",
+    "features": [
+      "Материал: Металл, дерево",
+      "Цвет: Черный, натуральное дерево",
+      "Регулируемая высота",
+      "Высота: до 180 см",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Loft Design",
+      "collection": "Studio",
+      "style": "Лофт, Индустриальный",
+      "room": "Гостиная, Кабинет, Студия",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Лампа 'Банкирская бронза'",
+    "category": "table",
+    "price": 125,
+    "oldPrice": 145,
+    "images": [
+      "/uploads/Лампа 8_IMG_1129.JPG",
+      "/uploads/Лампа 8_IMG_1130.JPG",
+      "/uploads/Лампа 8_IMG_1131.JPG",
+      "/uploads/Лампа 8_IMG_1132.JPG",
+      "/uploads/Лампа 8_IMG_1133.JPG",
+      "/uploads/Лампа 8_IMG_1134.JPG",
+      "/uploads/Лампа 8_IMG_1135.JPG",
+      "/uploads/Лампа 8_IMG_1136.JPG",
+      "/uploads/Лампа 8_IMG_1137.JPG",
+      "/uploads/Лампа 8_IMG_1138.JPG",
+      "/uploads/Лампа 8_IMG_1139.JPG",
+      "/uploads/Лампа 8_IMG_1140.JPG",
+      "/uploads/Лампа 8_IMG_1141.JPG",
+      "/uploads/Лампа 8_IMG_1142.JPG",
+      "/uploads/Лампа 8_IMG_1143.JPG"
+    ],
+    "inStock": true,
+    "description": "Настольная лампа в классическом стиле с основанием 'под бронзу' и стеклянным плафоном. Создает атмосферу старинного кабинета или библиотеки.",
+    "features": [
+      "Материал: Металл, стекло",
+      "Цвет: Бронза, зеленый",
+      "Высота: 38 см",
+      "Тип цоколя: E27"
+    ],
+    "specifications": {
+      "brand": "Classic Light",
+      "collection": "Banker",
+      "style": "Классический, Ретро",
+      "room": "Кабинет, Библиотека",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Декоративный объект TNT",
+    "category": "decor",
+    "price": 95,
+    "oldPrice": 110,
+    "images": [
+      "/uploads/TNT_IMG_1237.JPG",
+      "/uploads/TNT_IMG_1238.JPG",
+      "/uploads/TNT_IMG_1239.JPG",
+      "/uploads/TNT_IMG_1240.JPG",
+      "/uploads/TNT_IMG_1241.JPG",
+      "/uploads/TNT_IMG_1242.JPG",
+      "/uploads/TNT_IMG_1243.JPG",
+      "/uploads/TNT_IMG_1244.JPG",
+      "/uploads/TNT_IMG_1341.JPG",
+      "/uploads/TNT_IMG_1342.JPG",
+      "/uploads/TNT_IMG_1343.JPG",
+      "/uploads/TNT_IMG_1344.JPG",
+      "/uploads/TNT_IMG_1345.JPG"
+    ],
+    "inStock": true,
+    "description": "Современный декоративный объект, который добавит уникальный акцент в ваш интерьер. Выполнен из высококачественных материалов.",
+    "features": [
+      "Материал: Металл",
+      "Цвет: Графит",
+      "Размеры: 20x15x10 см"
+    ],
+    "specifications": {
+      "brand": "Art Decor",
+      "collection": "Urban",
+      "style": "Лофт, Современный",
+      "room": "Гостиная, Кабинет",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Статуэтка 'Змея'",
+    "category": "decor",
+    "price": 150,
+    "oldPrice": 170,
+    "images": [
+      "/uploads/Змея_IMG_0948.JPG",
+      "/uploads/Змея_IMG_0949.JPG",
+      "/uploads/Змея_IMG_0950.JPG",
+      "/uploads/Змея_IMG_0951.JPG",
+      "/uploads/Змея_IMG_0952.JPG",
+      "/uploads/Змея_IMG_0953.JPG",
+      "/uploads/Змея_IMG_0954.JPG",
+      "/uploads/Змея_IMG_1036.JPG",
+      "/uploads/Змея_IMG_1037.JPG",
+      "/uploads/Змея_IMG_1152.JPG",
+      "/uploads/Змея_IMG_1153.JPG",
+      "/uploads/Змея_IMG_1154.JPG",
+      "/uploads/Змея_IMG_1155.JPG"
+    ],
+    "inStock": true,
+    "description": "Изящная статуэтка в виде змеи, символизирующая мудрость и обновление. Станет ярким акцентом в любом интерьере.",
+    "features": [
+      "Материал: Полистоун",
+      "Цвет: Бронзовый",
+      "Длина: 40 см"
+    ],
+    "specifications": {
+      "brand": "Decor Figurines",
+      "collection": "Wild Life",
+      "style": "Арт-деко, Эклектика",
+      "room": "Кабинет, Гостиная",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Маска 'Дух племени'",
+    "category": "decor",
+    "price": 250,
+    "oldPrice": 290,
+    "images": [
+      "/uploads/Маска 1_IMG_1274.JPG",
+      "/uploads/Маска 1_IMG_1275.JPG",
+      "/uploads/Маска 1_IMG_1276.JPG",
+      "/uploads/Маска 1_IMG_1277.JPG",
+      "/uploads/Маска 1_IMG_1278.JPG",
+      "/uploads/Маска 1_IMG_1284.JPG",
+      "/uploads/Маска 1_IMG_1285.JPG",
+      "/uploads/Маска 1_IMG_1286.JPG",
+      "/uploads/Маска 1_IMG_1287.JPG",
+      "/uploads/Маска 1_IMG_1288.JPG",
+      "/uploads/Маска 1_IMG_1289.JPG",
+      "/uploads/Маска 1_IMG_1290.JPG",
+      "/uploads/Маска 1_IMG_1291.JPG",
+      "/uploads/Маска 1_IMG_1292.JPG",
+      "/uploads/Маска 1_IMG_1293.JPG",
+      "/uploads/Маска 1_IMG_1294.JPG",
+      "/uploads/Маска 1_IMG_1295.JPG",
+      "/uploads/Маска 1_IMG_1296.JPG",
+      "/uploads/Маска 1_IMG_1297.JPG",
+      "/uploads/Маска 1_IMG_1298.JPG",
+      "/uploads/Маска 1_IMG_1299.JPG",
+      "/uploads/Маска 1_IMG_1300.JPG",
+      "/uploads/Маска 1_IMG_1301.JPG",
+      "/uploads/Маска 1_IMG_1302.JPG",
+      "/uploads/Маска 1_IMG_1303.JPG",
+      "/uploads/Маска 1_IMG_1304.JPG",
+      "/uploads/Маска 1_IMG_1305.JPG",
+      "/uploads/Маска 1_IMG_1306.JPG",
+      "/uploads/Маска 1_IMG_1307.JPG",
+      "/uploads/Маска 1_IMG_1308.JPG",
+      "/uploads/Маска 1_IMG_1309.JPG",
+      "/uploads/Маска 1_IMG_1310.JPG",
+      "/uploads/Маска 1_IMG_1311.JPG",
+      "/uploads/Маска 1_IMG_1312.JPG",
+      "/uploads/Маска 1_IMG_1313.JPG",
+      "/uploads/Маска 1_IMG_1314.JPG",
+      "/uploads/Маска 1_IMG_1315.JPG",
+      "/uploads/Маска 1_IMG_1316.JPG",
+      "/uploads/Маска 1_IMG_1317.JPG",
+      "/uploads/Маска 1_IMG_1318.JPG",
+      "/uploads/Маска 1_IMG_1319.JPG",
+      "/uploads/Маска 1_IMG_1320.JPG",
+      "/uploads/Маска 1_IMG_1321.JPG",
+      "/uploads/Маска 1_IMG_1322.JPG",
+      "/uploads/Маска 1_IMG_1323.JPG",
+      "/uploads/Маска 1_IMG_1324.JPG",
+      "/uploads/Маска 1_IMG_1325.JPG",
+      "/uploads/Маска 1_IMG_1326.JPG",
+      "/uploads/Маска 1_IMG_1327.JPG",
+      "/uploads/Маска 1_IMG_1328.JPG",
+      "/uploads/Маска 1_IMG_1329.JPG",
+      "/uploads/Маска 1_IMG_1330.JPG",
+      "/uploads/Маска 1_IMG_1331.JPG",
+      "/uploads/Маска 1_IMG_1332.JPG",
+      "/uploads/Маска 1_IMG_1333.JPG",
+      "/uploads/Маска 1_IMG_1334.JPG",
+      "/uploads/Маска 1_IMG_1335.JPG",
+      "/uploads/Маска 1_IMG_1336.JPG",
+      "/uploads/Маска 1_IMG_1337.JPG",
+      "/uploads/Маска 1_IMG_1338.JPG",
+      "/uploads/Маска 1_IMG_1339.JPG",
+      "/uploads/Маска 1_IMG_1340.JPG"
+    ],
+    "inStock": true,
+    "description": "Декоративная настенная маска, вдохновленная этническими мотивами. Ручная работа и внимание к деталям делают каждый экземпляр уникальным.",
+    "features": [
+      "Материал: Дерево",
+      "Ручная роспись",
+      "Высота: 50 см",
+      "Крепление на стену в комплекте"
+    ],
+    "specifications": {
+      "brand": "Ethnic Art",
+      "collection": "Tribal",
+      "style": "Этно, Бохо",
+      "room": "Гостиная, Кабинет, Холл",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Подсвечник",
+    "category": "decor",
+    "price": 120,
+    "images": [
+      "/uploads/Подсвечник_IMG_0967.JPG",
+      "/uploads/Подсвечник_IMG_0968.JPG",
+      "/uploads/Подсвечник_IMG_0969.JPG",
+      "/uploads/Подсвечник_IMG_0970.JPG",
+      "/uploads/Подсвечник_IMG_0971.JPG",
+      "/uploads/Подсвечник_IMG_0975.JPG",
+      "/uploads/Подсвечник_IMG_0976.JPG",
+      "/uploads/Подсвечник_IMG_0977.JPG",
+      "/uploads/Подсвечник_IMG_0978.JPG",
+      "/uploads/Подсвечник_IMG_0979.JPG",
+      "/uploads/Подсвечник_IMG_0980.JPG",
+      "/uploads/Подсвечник_IMG_0981.JPG",
+      "/uploads/Подсвечник_IMG_0982.JPG",
+      "/uploads/Подсвечник_IMG_0983.JPG",
+      "/uploads/Подсвечник_IMG_0984.JPG",
+      "/uploads/Подсвечник_IMG_0985.JPG",
+      "/uploads/Подсвечник_IMG_0986.JPG",
+      "/uploads/Подсвечник_IMG_0987.JPG",
+      "/uploads/Подсвечник_IMG_0988.JPG",
+      "/uploads/Подсвечник_IMG_0989.JPG",
+      "/uploads/Подсвечник_IMG_0990.JPG",
+      "/uploads/Подсвечник_IMG_0991.JPG",
+      "/uploads/Подсвечник_IMG_1054.JPG",
+      "/uploads/Подсвечник_IMG_1055.JPG",
+      "/uploads/Подсвечник_IMG_1056.JPG",
+      "/uploads/Подсвечник_IMG_1057.JPG",
+      "/uploads/Подсвечник_IMG_1058.JPG",
+      "/uploads/Подсвечник_IMG_1059.JPG",
+      "/uploads/Подсвечник_IMG_1060.JPG",
+      "/uploads/Подсвечник_IMG_1061 (1).JPG",
+      "/uploads/Подсвечник_IMG_1061.JPG",
+      "/uploads/Подсвечник_IMG_1062.JPG"
+    ],
+    "inStock": true,
+    "description": "Массивный кованый подсвечник, который добавит в интерьер нотки средневековой романтики. Идеально подходит для больших свечей.",
+    "features": [
+      "Материал: Металл",
+      "Цвет: Черненый",
+      "Высота: 45 см",
+      "Устойчивое основание"
+    ],
+    "specifications": {
+      "brand": "Forge Master",
+      "collection": "Castle",
+      "style": "Готический, Рустик",
+      "room": "Гостиная, Столовая, Каминный зал",
+      "warranty": "3 года"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Шлем",
+    "category": "decor",
+    "price": 350,
+    "oldPrice": 400,
+    "images": [
+      "/uploads/Шлем_IMG_1064.JPG",
+      "/uploads/Шлем_IMG_1065.JPG",
+      "/uploads/Шлем_IMG_1066.JPG",
+      "/uploads/Шлем_IMG_1067.JPG",
+      "/uploads/Шлем_IMG_1068.JPG",
+      "/uploads/Шлем_IMG_1069.JPG",
+      "/uploads/Шлем_IMG_1070.JPG",
+      "/uploads/Шлем_IMG_1071.JPG",
+      "/uploads/Шлем_IMG_1072.JPG",
+      "/uploads/Шлем_IMG_1073.JPG",
+      "/uploads/Шлем_IMG_1074.JPG",
+      "/uploads/Шлем_IMG_1075.JPG",
+      "/uploads/Шлем_IMG_1076.JPG",
+      "/uploads/Шлем_IMG_1077.JPG",
+      "/uploads/Шлем_IMG_1078.JPG",
+      "/uploads/Шлем_IMG_1079.JPG",
+      "/uploads/Шлем_IMG_1080.JPG",
+      "/uploads/Шлем_IMG_1081.JPG",
+      "/uploads/Шлем_IMG_1082.JPG",
+      "/uploads/Шлем_IMG_1083.JPG",
+      "/uploads/Шлем_IMG_1084.JPG",
+      "/uploads/Шлем_IMG_1085.JPG",
+      "/uploads/Шлем_IMG_1094.JPG",
+      "/uploads/Шлем_IMG_1095.JPG",
+      "/uploads/Шлем_IMG_1096.JPG",
+      "/uploads/Шлем_IMG_1097.JPG",
+      "/uploads/Шлем_IMG_1098.JPG",
+      "/uploads/Шлем_IMG_1099.JPG",
+      "/uploads/Шлем_IMG_1100.JPG",
+      "/uploads/Шлем_IMG_1101.JPG",
+      "/uploads/Шлем_IMG_1102.JPG",
+      "/uploads/Шлем_IMG_1103.JPG",
+      "/uploads/Шлем_IMG_1104.JPG",
+      "/uploads/Шлем_IMG_1105.JPG",
+      "/uploads/Шлем_IMG_1106.JPG",
+      "/uploads/Шлем_IMG_1107.JPG"
+    ],
+    "inStock": true,
+    "description": "Реплика исторического шлема на подставке. Отличный предмет коллекционирования и элемент декора для кабинета или мужского интерьера.",
+    "features": [
+      "Материал: Сталь, дерево (подставка)",
+      "Полноразмерная реплика",
+      "Высота с подставкой: 48 см"
+    ],
+    "specifications": {
+      "brand": "History Craft",
+      "collection": "Knights",
+      "style": "Исторический, Классический",
+      "room": "Кабинет, Библиотека",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Маска 'Венецианский карнавал'",
+    "category": "decor",
+    "price": 230,
+    "oldPrice": 260,
+    "images": [
+      "/uploads/Маска 2_IMG_1259.JPG",
+      "/uploads/Маска 2_IMG_1260.JPG",
+      "/uploads/Маска 2_IMG_1261.JPG",
+      "/uploads/Маска 2_IMG_1262.JPG",
+      "/uploads/Маска 2_IMG_1263.JPG",
+      "/uploads/Маска 2_IMG_1279.JPG",
+      "/uploads/Маска 2_IMG_1280.JPG",
+      "/uploads/Маска 2_IMG_1281.JPG"
+    ],
+    "inStock": true,
+    "description": "Венецианская декоративная маска. Изысканный элемент декора, который добавит таинственности и роскоши в ваш интерьер.",
+    "features": [
+      "Материал: Папье-маше, ткань, металл",
+      "Ручная работа",
+      "Декорирована стразами и перьями",
+      "Высота: 45 см"
+    ],
+    "specifications": {
+      "brand": "Venice Art",
+      "collection": "Carnival",
+      "style": "Классический, Арт-деко",
+      "room": "Гостиная, Спальня, Холл",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Маска 'Африканский ритуал'",
+    "category": "decor",
+    "price": 210,
+    "images": [
+      "/uploads/Маска 3_IMG_1046.JPG",
+      "/uploads/Маска 3_IMG_1047.JPG",
+      "/uploads/Маска 3_IMG_1048.JPG",
+      "/uploads/Маска 3_IMG_1049.JPG",
+      "/uploads/Маска 3_IMG_1050.JPG",
+      "/uploads/Маска 3_IMG_1051.JPG",
+      "/uploads/Маска 3_IMG_1052.JPG",
+      "/uploads/Маска 3_IMG_1053.JPG"
+    ],
+    "inStock": true,
+    "description": "Африканская ритуальная маска из дерева. Аутентичный предмет декора для ценителей этнического искусства.",
+    "features": [
+      "Материал: Дерево",
+      "Ручная резьба",
+      "Высота: 60 см",
+      "Настенное крепление"
+    ],
+    "specifications": {
+      "brand": "Ethnic Art",
+      "collection": "Africa",
+      "style": "Этно, Трайбл",
+      "room": "Гостиная, Кабинет",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Статуэтка 'Машина'",
+    "category": "decor",
+    "price": 115,
+    "oldPrice": 130,
+    "images": [
+      "/uploads/Машина_IMG_1375.JPG",
+      "/uploads/Машина_IMG_1376.JPG",
+      "/uploads/Машина_IMG_1377.JPG",
+      "/uploads/Машина_IMG_1378.JPG",
+      "/uploads/Машина_IMG_1379.JPG",
+      "/uploads/Машина_IMG_1380.JPG",
+      "/uploads/Машина_IMG_1381.JPG",
+      "/uploads/Машина_IMG_1382.JPG",
+      "/uploads/Машина_IMG_1383.JPG"
+    ],
+    "inStock": true,
+    "description": "Декоративная модель ретро-автомобиля. Отличный подарок для коллекционеров и автолюбителей, а также стильный элемент декора.",
+    "features": [
+      "Материал: Металл",
+      "Цвет: Красный",
+      "Длина: 30 см",
+      "Высокая детализация"
+    ],
+    "specifications": {
+      "brand": "Retro Models",
+      "collection": "Classic Cars",
+      "style": "Ретро, Винтаж",
+      "room": "Кабинет, Детская, Гостиная",
+      "warranty": "1 год"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Статуэтка 'Пегас'",
+    "category": "decor",
+    "price": 185,
+    "oldPrice": 210,
+    "images": [
+      "/uploads/Пегас_IMG_1369.JPG",
+      "/uploads/Пегас_IMG_1370.JPG",
+      "/uploads/Пегас_IMG_1371.JPG",
+      "/uploads/Пегас_IMG_1372.JPG",
+      "/uploads/Пегас_IMG_1373.JPG",
+      "/uploads/Пегас_IMG_1374.JPG"
+    ],
+    "inStock": true,
+    "description": "Величественная статуэтка Пегаса, символа вдохновения и славы. Выполнена из полистоуна с эффектом бронзового покрытия.",
+    "features": [
+      "Материал: Полистоун",
+      "Цвет: Бронза",
+      "Высота: 35 см"
+    ],
+    "specifications": {
+      "brand": "Decor Figurines",
+      "collection": "Mythology",
+      "style": "Классический, Неоклассика",
+      "room": "Кабинет, Гостиная, Библиотека",
+      "warranty": "2 года"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Рука (подставка под вино)",
+    "category": "decor",
+    "price": 95,
+    "images": [
+      "/uploads/Рука (подставка под вино)_IMG_1444.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1445.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1446.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1447.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1448.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1449.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1450.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1451.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1452.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1453.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1454.JPG",
+      "/uploads/Рука (подставка под вино)_IMG_1455.JPG"
+    ],
+    "inStock": true,
+    "description": "Необычная подставка для вина в виде руки. Смелый и креативный элемент декора, который не останется незамеченным.",
+    "features": [
+      "Материал: Полистоун",
+      "Цвет: Серебро",
+      "Надежно удерживает бутылку"
+    ],
+    "specifications": {
+      "brand": "Art Decor",
+      "collection": "Avant-garde",
+      "style": "Контемпорари, Эклектика",
+      "room": "Гостиная, Бар, Кухня",
+      "warranty": "1 год"
     }
   }
 ]

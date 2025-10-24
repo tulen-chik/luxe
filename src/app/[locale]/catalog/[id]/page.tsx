@@ -10,15 +10,12 @@ import {
   ChevronRight,
   Check,
   Send,
-  Loader,
   AlertCircle,
-  Sparkles,
 } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
-// 1. Определяем тип данных, который мы ожидаем от API
-// Этот тип должен быть таким же, как в админ-панели
+// 1. Определяем тип данных с опциональными спецификациями
 interface Product {
   id: number;
   name: string;
@@ -30,55 +27,135 @@ interface Product {
   images: string[];
   features: string[];
   specifications: {
-    brand: string;
-    collection: string;
-    style: string;
-    room: string;
-    warranty: string;
-    country: string;
+    brand?: string;
+    collection?: string;
+    style?: string;
+    room?: string;
+    warranty?: string;
+    country?: string;
   };
 }
+
+// Компонент скелета остается без изменений
+const ProductPageSkeleton = () => (
+  <div className="min-h-screen bg-[#FAF7F2]">
+    <section className="py-8 md:py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          {/* Скелет галереи изображений */}
+          <div className="space-y-4">
+            <div className="aspect-square bg-[#E8DCC8]/40 rounded-xl animate-pulse"></div>
+            <div className="grid grid-cols-4 gap-3">
+              <div className="aspect-square bg-[#E8DCC8]/40 rounded-lg animate-pulse"></div>
+              <div className="aspect-square bg-[#E8DCC8]/40 rounded-lg animate-pulse"></div>
+              <div className="aspect-square bg-[#E8DCC8]/40 rounded-lg animate-pulse"></div>
+              <div className="aspect-square bg-[#E8DCC8]/40 rounded-lg animate-pulse"></div>
+            </div>
+          </div>
+
+          {/* Скелет информации о товаре */}
+          <div className="space-y-6">
+            <div className="h-10 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+            <div className="h-12 w-1/3 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+            <div className="h-6 w-1/4 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+            <div className="space-y-3 pt-2">
+              <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+              <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+              <div className="h-5 w-5/6 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+            </div>
+            <div className="pt-4">
+              <div className="h-14 w-full bg-[#E8DCC8]/40 rounded-lg animate-pulse"></div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-[#E8DCC8]">
+              <div className="flex items-start gap-3">
+                <div className="p-2 bg-[#E8DCC8]/40 rounded-lg h-9 w-9 animate-pulse"></div>
+                <div className="flex-1 space-y-2">
+                   <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                   <div className="h-4 w-1/2 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                </div>
+              </div>
+               <div className="flex items-start gap-3">
+                <div className="p-2 bg-[#E8DCC8]/40 rounded-lg h-9 w-9 animate-pulse"></div>
+                <div className="flex-1 space-y-2">
+                   <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                   <div className="h-4 w-1/2 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                </div>
+              </div>
+               <div className="flex items-start gap-3">
+                <div className="p-2 bg-[#E8DCC8]/40 rounded-lg h-9 w-9 animate-pulse"></div>
+                <div className="flex-1 space-y-2">
+                   <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                   <div className="h-4 w-1/2 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Скелет секции с деталями */}
+        <div className="mt-12 lg:mt-16">
+          <div className="bg-white border-2 border-[#E8DCC8] rounded-xl p-6 md:p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <div className="h-8 w-1/2 bg-[#E8DCC8]/40 rounded animate-pulse mb-6"></div>
+                <div className="space-y-4">
+                  <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                  <div className="h-5 w-5/6 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                  <div className="h-5 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                  <div className="h-5 w-3/4 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                </div>
+              </div>
+              <div>
+                <div className="h-8 w-1/2 bg-[#E8DCC8]/40 rounded animate-pulse mb-6"></div>
+                <div className="space-y-4">
+                  <div className="h-8 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                  <div className="h-8 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                  <div className="h-8 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                  <div className="h-8 w-full bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+);
+
 
 export default function ProductPage() {
   const params = useParams();
   const productId = params.id as string;
 
-  // 2. Состояния для данных, загрузки и ошибок
   const [product, setProduct] = useState<Product | null>(null);
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const [selectedImage, setSelectedImage] = useState(0);
 
-  // 3. Загружаем данные с API при монтировании компонента
   useEffect(() => {
-    if (!productId) return; // Не делаем запрос, если ID еще не доступен
+    if (!productId) return;
 
     const fetchProductData = async () => {
       setIsLoading(true);
       setError(null);
       try {
-        // Загружаем основной товар
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
         const productRes = await fetch(`/api/products/${productId}`);
         if (!productRes.ok) {
-          if (productRes.status === 404) {
-            throw new Error("Товар не найден");
-          }
+          if (productRes.status === 404) throw new Error("Товар не найден");
           throw new Error("Не удалось загрузить данные о товаре");
         }
         const productData: Product = await productRes.json();
         setProduct(productData);
 
-        // Загружаем все товары для секции "Похожие товары"
         const allProductsRes = await fetch('/api/products');
         if (!allProductsRes.ok) {
-            // Не критичная ошибка, просто не покажем похожие товары
             console.error("Не удалось загрузить похожие товары");
             return;
         }
         const allProductsData: Product[] = await allProductsRes.json();
-        // Фильтруем, чтобы исключить текущий товар и оставить 3 случайных
         const related = allProductsData
             .filter(p => p.id !== productData.id && p.category === productData.category)
             .slice(0, 3);
@@ -92,7 +169,7 @@ export default function ProductPage() {
     };
 
     fetchProductData();
-  }, [productId]); // Эффект перезапустится, если ID в URL изменится
+  }, [productId]);
 
   const nextImage = () => {
     if (product) {
@@ -106,13 +183,8 @@ export default function ProductPage() {
     }
   };
 
-  // 4. Рендеринг состояний загрузки и ошибок
   if (isLoading) {
-    return (
-      <div className="min-h-screen bg-[#FAF7F2] flex justify-center items-center">
-        <Loader className="w-16 h-16 text-[#C17B5C] animate-spin" />
-      </div>
-    );
+    return <ProductPageSkeleton />;
   }
 
   if (error) {
@@ -130,12 +202,10 @@ export default function ProductPage() {
     );
   }
 
-  // Если товар не найден после загрузки (на всякий случай)
   if (!product) {
-    return null; // или можно вернуть компонент "Не найдено"
+    return null;
   }
 
-  // 5. Основной рендеринг страницы с полученными данными
   return (
     <div className="min-h-screen bg-[#FAF7F2]">
       <section className="py-8 md:py-12">
@@ -238,7 +308,8 @@ export default function ProductPage() {
                   <div className="p-2 bg-[#E8DCC8] rounded-lg"><Shield className="w-5 h-5 text-[#C17B5C]" /></div>
                   <div>
                     <div className="font-semibold text-[#2C2416] font-sans">Гарантия</div>
-                    <div className="text-sm text-[#6B5D4F] font-sans">{product.specifications.warranty}</div>
+                    {/* ИЗМЕНЕНИЕ ЗДЕСЬ: Добавлена запасная фраза */}
+                    <div className="text-sm text-[#6B5D4F] font-sans">{product.specifications.warranty || '1 год'}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -269,11 +340,14 @@ export default function ProductPage() {
                 <div>
                   <h2 className="text-2xl font-bold text-[#2C2416] mb-4 font-serif">Спецификации</h2>
                   <div className="space-y-3">
+                    {/* ИЗМЕНЕНИЕ ЗДЕСЬ: Добавлена проверка на существование значения */}
                     {Object.entries(product.specifications).map(([key, value]) => (
-                      <div key={key} className="flex justify-between py-2 border-b border-[#E8DCC8]">
-                        <span className="text-[#6B5D4F] font-sans capitalize">{key}:</span>
-                        <span className="font-semibold text-[#2C2416] font-sans">{value}</span>
-                      </div>
+                      value && (
+                        <div key={key} className="flex justify-between py-2 border-b border-[#E8DCC8]">
+                          <span className="text-[#6B5D4F] font-sans capitalize">{key}:</span>
+                          <span className="font-semibold text-[#2C2416] font-sans">{value}</span>
+                        </div>
+                      )
                     ))}
                   </div>
                 </div>
@@ -296,7 +370,7 @@ export default function ProductPage() {
                     </div>
                     <div className="p-4">
                       <h3 className="font-semibold text-lg mb-2 text-[#2C2416] line-clamp-2 font-serif">{relatedProduct.name}</h3>
-                      <span className="text-2xl font-bold text-[#C17B5C] font-serif mt-4 block">{relatedProduct.price.toLocaleString("ru-RU")} ₽</span>
+                      <span className="text-2xl font-bold text-[#C17B5C] font-serif mt-4 block">{relatedProduct.price.toLocaleString("ru-RU")} Br</span>
                     </div>
                   </div>
                 </Link>

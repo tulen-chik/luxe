@@ -1,22 +1,40 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
-import { Mail, Phone, Instagram, Send, Upload, X, Lightbulb, Check } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Mail, Phone, Instagram, Send, Upload, X, Lightbulb, Check, Paperclip } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-import { sendEmail } from "@/actions/sendEmail"
+import { sendEmail } from "@/actions/sendEmail" // Убедитесь, что путь к вашему серверному действию верный
 import Link from "next/link"
 import Image from "next/image"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [imagePreview, setImagePreview] = useState<string | null>(null)
-  const [fileName, setFileName] = useState<string>("")
+  const [files, setFiles] = useState<File[]>([])
   const [formStatus, setFormStatus] = useState<{ message: string; type: "success" | "error" | "" }>({
     message: "",
     type: "",
   })
   const [copied, setCopied] = useState<string>("")
+
+  // Создаем временные URL для превью изображений
+  const filePreviews = files.map(file => ({
+    name: file.name,
+    type: file.type,
+    size: file.size,
+    url: file.type.startsWith("image/") ? URL.createObjectURL(file) : null,
+  }))
+
+  // Очищаем временные URL при размонтировании компонента, чтобы избежать утечек памяти
+  useEffect(() => {
+    return () => {
+      filePreviews.forEach(preview => {
+        if (preview.url) {
+          URL.revokeObjectURL(preview.url)
+        }
+      })
+    }
+  }, [files]) // Зависимость от files, чтобы эффект срабатывал при их изменении
 
   const copyToClipboard = (text: string, type: string) => {
     navigator.clipboard.writeText(text).then(
@@ -31,39 +49,40 @@ export default function ContactPage() {
     )
   }
 
-  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (file) {
-      setFileName(file.name)
-      const reader = new FileReader()
-      reader.onloadend = () => {
-        setImagePreview(reader.result as string)
-      }
-      reader.readAsDataURL(file)
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      // Добавляем новые выбранные файлы к уже существующим в состоянии
+      setFiles(prevFiles => [...prevFiles, ...Array.from(e.target.files!)])
     }
   }
 
-  const removeImage = () => {
-    setImagePreview(null)
-    setFileName("")
-    const fileInput = document.getElementById("image") as HTMLInputElement
+  const removeFile = (indexToRemove: number) => {
+    setFiles(prevFiles => prevFiles.filter((_, index) => index !== indexToRemove))
+    // Сбрасываем значение инпута, чтобы можно было выбрать тот же файл снова
+    const fileInput = document.getElementById("files") as HTMLInputElement
     if (fileInput) fileInput.value = ""
   }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setIsSubmitting(true)
-    setFormStatus({ message: "", type: "" }) // Сброс статуса перед новой отправкой
+    setFormStatus({ message: "", type: "" })
 
     const formData = new FormData(event.currentTarget)
+    // Очищаем ключ 'files' и добавляем все файлы из нашего состояния
+    formData.delete('files')
+    files.forEach(file => {
+      formData.append('files', file)
+    })
+
     const result = await sendEmail(formData)
 
     if (result.success) {
       setFormStatus({ message: result.message, type: "success" })
-      ;(event.target as HTMLFormElement).reset()
-      removeImage()
+      ;(event.target as HTMLFormElement).reset() // Очищаем поля формы
+      setFiles([]) // Очищаем массив файлов
     } else {
-      setFormStatus({ message: result.message, type: "error" })
+      setFormStatus({ message: result.message || "Произошла неизвестная ошибка.", type: "error" })
     }
 
     setIsSubmitting(false)
@@ -188,48 +207,71 @@ export default function ContactPage() {
               />
             </div>
 
-            {/* Image Upload */}
+            {/* File Upload */}
             <div>
-              <label htmlFor="image" className="block text-sm font-medium text-[#2C1810] mb-2 font-sans">
-                Изображение (опционально)
+              <label htmlFor="files" className="block text-sm font-medium text-[#2C1810] mb-2 font-sans">
+                Файлы (опционально)
               </label>
               <div className="relative">
                 <input
                   type="file"
-                  id="image"
-                  name="image"
-                  accept="image/*"
-                  onChange={handleImageChange}
+                  id="files"
+                  name="files"
+                  multiple // Разрешаем выбор нескольких файлов
+                  onChange={handleFileChange}
                   className="hidden"
                 />
                 <label
-                  htmlFor="image"
+                  htmlFor="files"
                   className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-dashed border-[#E8DED0] rounded-lg cursor-pointer hover:border-[#C17B5C] transition-colors bg-[#FAF7F2]"
                 >
                   <Upload size={20} className="text-[#C17B5C]" />
-                  <span className="text-[#6B5A4C] font-sans">{fileName || "Загрузите фото желаемого светильника"}</span>
+                  <span className="text-[#6B5A4C] font-sans">
+                    {files.length > 0 ? `Выбрано файлов: ${files.length}` : "Загрузите фото или другие файлы"}
+                  </span>
                 </label>
               </div>
 
-              {/* Image Preview */}
-              {imagePreview && (
-                <motion.div
-                  className="mt-4 relative"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="relative w-full h-64 rounded-lg overflow-hidden border-2 border-[#E8DED0]">
-                    <Image src={imagePreview || "/placeholder.svg"} alt="Preview" fill className="object-cover" />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={removeImage}
-                    className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-lg hover:bg-red-100 transition-colors"
-                  >
-                    <X size={20} className="text-red-500" />
-                  </button>
-                </motion.div>
+              {/* Files Preview */}
+              {files.length > 0 && (
+                <div className="mt-4 space-y-3">
+                  <AnimatePresence>
+                    {filePreviews.map((preview, index) => (
+                      <motion.div
+                        key={preview.name + index}
+                        layout
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        transition={{ duration: 0.3 }}
+                        className="relative p-2 border-2 border-[#E8DED0] rounded-lg bg-[#FAF7F2]"
+                      >
+                        <div className="flex items-center">
+                          {preview.url ? (
+                            <div className="relative w-16 h-16 rounded-md overflow-hidden mr-4 flex-shrink-0">
+                              <Image src={preview.url} alt={preview.name} fill className="object-cover" />
+                            </div>
+                          ) : (
+                            <div className="w-16 h-16 flex items-center justify-center bg-[#E8DED0] rounded-md mr-4 flex-shrink-0">
+                              <Paperclip className="w-6 h-6 text-[#C17B5C]" />
+                            </div>
+                          )}
+                          <div className="flex-grow min-w-0">
+                            <p className="text-sm font-medium text-[#2C1810] truncate">{preview.name}</p>
+                            <p className="text-xs text-[#6B5A4C]">{Math.round(preview.size / 1024)} KB</p>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => removeFile(index)}
+                            className="ml-4 p-2 rounded-full hover:bg-red-100 transition-colors flex-shrink-0"
+                          >
+                            <X size={18} className="text-red-500" />
+                          </button>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </AnimatePresence>
+                </div>
               )}
             </div>
 

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Lamp, Lightbulb, Sparkles, Filter, Search, ChevronDown, X, ArrowRight, Loader, AlertCircle } from "lucide-react";
+import { Lamp, Lightbulb, Sparkles, Filter, Search, ChevronDown, X, ArrowRight, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 // 1. Определяем тип данных, который мы ожидаем от API
@@ -31,9 +31,25 @@ const categories = [
   { value: "pendant", label: "Подвесные", icon: Lamp },
   { value: "floor", label: "Торшеры", icon: Lightbulb },
   { value: "table", label: "Настольные", icon: Lamp },
-  { value: "chandelier", label: "Люстры", icon: Sparkles },
+  { value: "decor", label: "Декор", icon: Sparkles },
   { value: "wall", label: "Настенные", icon: Lamp },
 ];
+
+// Компонент скелета для карточки товара
+const ProductCardSkeleton = () => (
+  <div className="group flex flex-col h-full overflow-hidden border-2 border-[#E8DCC8] rounded-xl bg-white">
+    <div className="relative aspect-square overflow-hidden bg-[#E8DCC8]/40 animate-pulse"></div>
+    <div className="p-4 flex flex-col flex-grow">
+      <div className="h-6 w-3/4 bg-[#E8DCC8]/40 rounded animate-pulse mb-4"></div>
+      <div className="h-4 w-1/2 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+      <div className="flex items-end justify-between mt-auto pt-4">
+        <div className="h-8 w-1/3 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+        <div className="h-6 w-1/4 bg-[#E8DCC8]/40 rounded animate-pulse"></div>
+      </div>
+    </div>
+  </div>
+);
+
 
 export default function CatalogPage() {
   // 2. Состояния для данных, загрузки и ошибок
@@ -55,6 +71,8 @@ export default function CatalogPage() {
       setIsLoading(true);
       setError(null);
       try {
+        // Имитация задержки сети для демонстрации скелета
+        await new Promise(resolve => setTimeout(resolve, 1500));
         const response = await fetch('/api/products');
         if (!response.ok) {
           throw new Error('Не удалось загрузить товары. Сервер вернул ошибку.');
@@ -172,7 +190,7 @@ export default function CatalogPage() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute top-full mt-2 w-full bg-white border-2 border-[#E8DCC8] rounded-lg shadow-lg overflow-hidden z-10"
+              className="absolute top-full mt-2 w-full bg-white border-2 border-[#E8DCC8] rounded-lg shadow-lg overflow-hidden z-20" // Увеличил z-index на всякий случай
             >
               {sortOptions.map((option) => (
                 <button
@@ -199,8 +217,10 @@ export default function CatalogPage() {
   const renderContent = () => {
     if (isLoading) {
       return (
-        <div className="flex justify-center items-center py-32">
-          <Loader className="w-12 h-12 text-[#C17B5C] animate-spin" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {Array.from({ length: 8 }).map((_, index) => (
+            <ProductCardSkeleton key={index} />
+          ))}
         </div>
       );
     }
@@ -260,9 +280,17 @@ export default function CatalogPage() {
                     {product.name}
                   </h3>
                   <div className="flex items-end justify-between mt-4">
+                    <div className="flex items-left items-center gap-2">
                     <span className="text-2xl font-bold text-[#C17B5C] font-serif">
                       {product.price} Br
                     </span>
+                    {product.oldPrice && product.oldPrice > product.price && (
+                      <span className="text-lg text-[#6B5D4F] line-through font-serif">
+                        {product.oldPrice} Br
+                      </span>
+                    )}
+                    </div>
+
                     <div className="flex items-center gap-1 text-[#C17B5C] font-semibold font-sans group-hover:gap-2 transition-all">
                       <span>Перейти</span>
                       <ArrowRight className="w-4 h-4" />
@@ -297,7 +325,7 @@ export default function CatalogPage() {
                 animate={{ height: "auto", opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="overflow-hidden"
+                className="" // <-- ИЗМЕНЕНИЕ ЗДЕСЬ
               >
                 <FilterPanel />
               </motion.div>

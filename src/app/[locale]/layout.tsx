@@ -51,6 +51,14 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       title: seoConfig.siteName,
       description: seoConfig.description,
       url: seoConfig.siteUrl,
+      images: [
+        {
+          url: '/logo.png', 
+          width: 1200,
+          height: 630,
+          alt: seoConfig.siteName,
+        },
+      ],
     },
 
     twitter: {
