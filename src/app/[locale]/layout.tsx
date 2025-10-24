@@ -53,7 +53,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       url: seoConfig.siteUrl,
       images: [
         {
-          url: '/logo.png', 
+           url: `${seoConfig.siteUrl}/logo.png`,
           width: 1200,
           height: 630,
           alt: seoConfig.siteName,

@@ -4,7 +4,7 @@ export const seoConfig: SeoConfig = {
   // --- Основная информация о сайте ---
   siteName: '3d fabriq',
   // ВАЖНО: Замените URL на ваш реальный домен, когда он будет готов
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://your-3dfabriq-url.com',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://luxe-beige.vercel.app/',
   description: 'Откройте для себя уникальные дизайнерские светильники от 3d fabriq, созданные с помощью 3D-печати. Каталог подвесных светильников, торшеров и ламп из экологичных материалов с доставкой по Беларуси.',
   
   // --- Ключевые слова для поисковых систем ---
