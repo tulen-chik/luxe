@@ -168,7 +168,7 @@ export default function SiteHeader({ locale }: Props) {
                   <div className="p-2 bg-[#C17B5C] rounded-lg">
                     <Lamp className="w-5 h-5 text-[#FAF7F2]" />
                   </div>
-                  <span className="font-bold text-lg text-[#2C2416] font-serif">{t('header.brand')}</span>
+                  <span className="font-bold text-lg text-[#2C2416] font-serif">{"3d fabriq"}</span>
                 </div>
                 <motion.button
                   whileHover={{ scale: 1.1, rotate: 90 }}

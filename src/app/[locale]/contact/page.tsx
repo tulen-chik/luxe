@@ -115,11 +115,11 @@ export default function ContactPage() {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <button
-            onClick={() => copyToClipboard("info@lightcatalog.com", "Email")}
+            onClick={() => copyToClipboard("3dfabriq@mail.ru", "Email")}
             className="flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#C17B5C] text-[#C17B5C] hover:bg-[#C17B5C] hover:text-white transition-all duration-300 rounded-lg font-medium font-sans"
           >
             {copied === "Email" ? <Check size={18} /> : <Mail size={18} />}
-            <span className="text-sm md:text-base">{copied === "Email" ? "Скопировано!" : "info@lightcatalog.com"}</span>
+            <span className="text-sm md:text-base">{copied === "Email" ? "Скопировано!" : "3dfabriq@mail.ru"}</span>
           </button>
 
           <button
